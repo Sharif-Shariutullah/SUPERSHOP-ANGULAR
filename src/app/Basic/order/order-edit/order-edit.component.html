@@ -1,0 +1,90 @@
+<h1>Edit</h1>
+
+<!-- step 05 -->
+
+<form [formGroup] = "userForm" (ngSubmit)="onSub()">
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="proName">Product Name</label>
+  
+        <input
+          type="text"
+          formControlName="proName"
+          class="form-control"
+          id="proName"
+          placeholder="like, Frutika Juice, potato Chips, biscuits"
+        />
+      </div>
+  
+      <div class="form-group col-md-6">
+        <label for="ProDescriptive">Description</label>
+  
+        <input
+          type="text"
+          formControlName="ProDescriptive"
+          class="form-control"
+          id="ProDescriptive"
+          placeholder="write about somthing"
+        />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="proStock">Stock</label>
+      <input
+        type="number"
+        formControlName="proStock"
+        class="form-control"
+        id="proStock"
+        placeholder="1234 Main St"
+      />
+    </div>
+  
+    <div class="form-group">
+      <label for="proBarcode">Barcode</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="proBarcode"
+        id="proBarcode"
+        placeholder="Apartment, studio, or floor"
+      />
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="CostPrice">Cost Price</label>
+        <input
+          type="number"
+          class="form-control"
+          formControlName="CostPrice"
+          id="CostPrice"
+        />
+      </div>
+  
+      <div class="form-group col-md-4">
+        <label for="status">Status</label>
+        <select id="status" formControlName="status" class="form-control">
+          <option selected>Choose...</option>
+          <option>Available</option>
+          <option>Empty</option>
+                </select>
+      </div>
+  
+      <div class="form-group col-md-2">
+        <label for="SellingPrice">Selling  Price</label>
+        <input
+          type="number"
+          class="form-control"
+          formControlName="SellingPrice"
+          id="SellingPrice"
+        />
+      </div>
+    </div>
+  
+   
+  
+    <!-- <button type="submit" (click)="onSub()" class="btn btn-primary">Sign in</button> -->
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+  
