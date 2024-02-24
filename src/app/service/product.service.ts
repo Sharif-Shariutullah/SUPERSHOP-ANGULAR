@@ -10,7 +10,7 @@ export class ProductService {
 
   constructor(private httpClient : HttpClient) { }
 
-private apiURL = 'http://localhost:8080/pro/add';
+private apiURL = 'http://localhost:8080/pro';
 
 httpOptions = {
   headers: new HttpHeaders({
@@ -21,7 +21,7 @@ httpOptions = {
 
 addData(user: product) {
   console.log('Call from service  ', user.proName);
-  return this.httpClient.post(this.apiURL, JSON.stringify(user));
+  return this.httpClient.post(this.apiURL+"/add", user);
 }
 
 getAll() {

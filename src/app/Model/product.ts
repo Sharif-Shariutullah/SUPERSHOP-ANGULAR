@@ -1,10 +1,10 @@
 export interface product {
   productID: number;
   proName: string;
-  ProDescriptive: string;
+  proDescriptive: string;
   proStock: number;
   proBarcode: string;
-  CostPrice: number;
-  SellingPrice: number;
+  costPrice: number;
+  sellingPrice: number;
   status: string;
 }

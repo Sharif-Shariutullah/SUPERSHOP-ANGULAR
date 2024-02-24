@@ -37,11 +37,11 @@ export class OrderListComponent implements OnInit {
 
     productID: new FormControl(''),
     proName: new FormControl(''),
-    ProDescriptive: new FormControl(''),
+    proDescriptive: new FormControl(''),
     proStock: new FormControl(''),
     proBarcode: new FormControl(''),
-    CostPrice: new FormControl(''),
-    SellingPrice: new FormControl(''),
+    costPrice: new FormControl(''),
+    sellingPrice: new FormControl(''),
     status: new FormControl('')
     
 
@@ -58,11 +58,11 @@ export class OrderListComponent implements OnInit {
 
 
       proName: new FormControl(ob.proName),
-      ProDescriptive: new FormControl(ob.ProDescriptive),
+      proDescriptive: new FormControl(ob.proDescriptive),
       proStock: new FormControl(ob.proStock),
       proBarcode: new FormControl(ob.proBarcode),
-      CostPrice: new FormControl(ob.CostPrice),
-      SellingPrice: new FormControl(ob.SellingPrice),
+      costPrice: new FormControl(ob.costPrice),
+      sellingPrice: new FormControl(ob.sellingPrice),
       status: new FormControl(ob.status)
   
 

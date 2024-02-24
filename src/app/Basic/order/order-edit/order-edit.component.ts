@@ -59,11 +59,11 @@ export class OrderEditComponent implements OnInit {
 
     productID: new FormControl(''),
     proName: new FormControl(''),
-    ProDescriptive: new FormControl(''),
+    proDescriptive: new FormControl(''),
     proStock: new FormControl(''),
     proBarcode: new FormControl(''),
-    CostPrice: new FormControl(''),
-    SellingPrice: new FormControl(''),
+    costPrice: new FormControl(''),
+    sellingPrice: new FormControl(''),
     status: new FormControl(''),
   });
 
